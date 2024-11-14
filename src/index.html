@@ -9,11 +9,11 @@
     <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
 
-    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <!-------------- Swiper's CSS ---------->
   <link href="./output.css" rel="stylesheet">
   <title>Plant Website || TailwindCSS </title>
 </head>
-<body>
+<body class="">
   <!--------------- Header ---------------->
   <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50 shadow-sm shadow-emerald-300">
     <nav class="container flex items-center justify-between h-16 sm:h-20">
@@ -29,7 +29,7 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li>
-                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#popular" class="nav-link">Popular</a>
                 </li>    
                 <li>
                     <a href="#review" class="nav-link">Review</a>
@@ -117,7 +117,12 @@
       </section>
 
       <!----------------- Services --------------->
-      <div class="bg-white text-green-950 py-12">
+      <div class="bg-emerald-500 text-green-950 py-12">
+        <div class="text-center p-4 -mt-12 mb-2">
+            <h1 class="text-3xl">
+                Why choose us?
+            </h1>
+        </div>
         <div class="container w-full grid grid-cols-1 gap-8 
         md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <!--Card1-->
@@ -184,7 +189,7 @@
       </div>
 
       <!--------------------------- About us ------------------->
-      <section id="about" class="relative overflow-hidden ">
+      <section id="about" class="relative overflow-hidden">
         <div class="absolute -top-8 -right-12 opacity-50">
             <img src="/assets/img/leaf-3.png" alt="" class="w-40 md:w-52 xl:w-64">
         </div>
@@ -240,11 +245,110 @@
       </section>
 
       <!--~~~~~~~~~~~~~~~ Popular ~~~~~~~~~~~~~~~-->
-      <section id="popular">
+      <section id="popular" class="bg-green-900">
+        <div class="flex flex-col items-center gap-3 text-center -mt-20 mb-20 xl:mb-28 ">
+            <h2 class="title">Your Choice Plant</h2>
+            <p class="max-w-2xl">Follow instruction for more</p>
+        </div>
 
+        <div class="container w-full grid grid-cols-1 gap-x-6 gap-y-36 
+        md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!-- --Card1-- -->
+            <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative shadow-md shadow-emerald-400">
+                <img src="/assets/img/cart-1.png" alt="" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2
+                -translate-y-1/2 duration-500">
+            
+                <p class="italic">Nephrolepis exaltata</p>
+                <h3>Boston Fern</h3>
+
+             <div class="text-yellow-500 text-xs py-3 text-gray-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-line text-gray-500"></i>
+                <i class="ri-star-line text-gray-500"></i>         
+             </div>
+                <div class="flex items-center justify-between">
+                <p class="text-xl">$5</p>
+                <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                    <i class="ri-shopping-cart-fill"></i>
+                </button>
+                </div>
+             </div>
+
+             <!-- --Card2-- -->
+            <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative shadow-md shadow-emerald-400">
+                <img src="/assets/img/cart-2.png" alt="" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2
+                -translate-y-1/2 duration-500">
+            
+                <p class="italic">Ficus elastica</p>
+                <h3>Rubber Plant</h3>
+
+             <div class="text-yellow-500 text-xs py-3 text-gray-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-line text-gray-500"></i>
+                <i class="ri-star-line text-gray-500"></i>         
+             </div>
+                <div class="flex items-center justify-between">
+                <p class="text-xl">$10</p>
+                <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                    <i class="ri-shopping-cart-fill"></i>
+                </button>
+                </div>
+             </div>
+
+             <!-- --Card3-- -->
+            <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative shadow-md shadow-emerald-400">
+                <img src="/assets/img/cart-3.png" alt="" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2
+                -translate-y-1/2 duration-500">
+            
+                <p class="italic">Spathiphyllum wallisii</p>
+                <h3>Peace Lily</h3>
+
+             <div class="text-yellow-500 text-xs py-3 text-gray-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-line text-gray-500"></i>
+                <i class="ri-star-line text-gray-500"></i>         
+             </div>
+                <div class="flex items-center justify-between">
+                <p class="text-xl">$15</p>
+                <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                    <i class="ri-shopping-cart-fill"></i>
+                </button>
+                </div>
+             </div>
+
+             <!-- --Card4-- -->
+            <div class="popular_card bg-green-950 p-10 pt-24 rounded-md relative shadow-md shadow-emerald-400">
+                <img src="/assets/img/cart-4.png" alt="" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2
+                -translate-y-1/2 duration-500">
+            
+                <p class="italic">Adenium obesum</p>
+                <h3>Desert Rose</h3>
+
+             <div class="text-yellow-500 text-xs py-3 text-gray-500">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-line text-gray-500"></i>
+                <i class="ri-star-line text-gray-500"></i>         
+             </div>
+                <div class="flex items-center justify-between">
+                <p class="text-xl">$10</p>
+                <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                    <i class="ri-shopping-cart-fill"></i>
+                </button>
+                </div>
+             </div>
+
+        </div>
       </section>
 
-      <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+      <!------------- Review ---------->
       <section id="review">
 
       </section>
@@ -263,13 +367,13 @@
       <!-- floral image -->
   </footer>
 
-  <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+  <!--------------- Scroll Up ---------->
 
-  <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+  <!----------- Swiper JS ----------->
 
-  <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+  <!---------------SCROLLREVEAL ------------->
 
-  <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+  <!--------- mainjs --------->
   <script src="/main.js"></script>
 </body>
 </html>
