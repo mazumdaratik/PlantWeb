@@ -69,4 +69,12 @@ const swiper = new Swiper('.swiper', {
 /*~~~~~~~~~~~~~~~ SCROLL SECTIONS ACTIVE LINK ~~~~~~~~~~~~~~~*/
 
 
-/*~~~~~~~~~~~~~~~ SCROLL REVEAL ANIMATION ~~~~~~~~~~~~~~~*/
+/*-------- SCROLL REVEAL ANIMATION ----------*/
+const sr = scrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 300,
+    reset: true
+})
+sr.reveal('.home_data')
